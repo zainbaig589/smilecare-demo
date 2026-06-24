@@ -1028,6 +1028,7 @@
 
         const text = await response.text();
         const data = text ? JSON.parse(text) : {};
+          console.log('n8n response:', JSON.stringify(data));
         hideTyping();
 
         // Extract reply — handles both field names
